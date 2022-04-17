@@ -331,12 +331,10 @@ body {
 	z-index: 4;
 }
 
-
 /* --------------------------------- */
 
 .car_style {
 	position: relative;
-	transform: translate(center center);
 }
 
 .car_style::after {
