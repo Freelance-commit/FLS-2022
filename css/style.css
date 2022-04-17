@@ -1,0 +1,452 @@
+@import url("mynotmalize.css");
+
+@font-face {
+	font-family: "FarCry";
+	src: url("../fonts/FarCry.woff2") format("woff2"), url("../fonts/FarCry.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	font-family: 'Arial', 'Helvetica', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: #121212;
+}
+
+.wrapper {
+	min-height: 100%;
+	/* overflow: hidden; */
+}
+
+[class*="__container"] {
+	max-width: 1900px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/* --------------------------------- */
+
+body {
+	font-family: "FarCry";
+	font-size: 18px;
+	font-weight: 400;
+}
+
+/* --------------------------------- */
+.car {
+	width: 1230px;
+	height: 290px;
+	border-radius: 38% 30% 20% 28% / 65% 62% 30% 23%;
+	background-color: #fe0000;
+	position: fixed;
+	left: 50%;
+	transform: translate(-50%, 150%);
+}
+
+.car__interior {
+	display: inline-block;
+	width: 455px;
+	height: 120px;
+	border-radius: 22% 0% 64% 30% / 5% 0% 100% 95%;
+	background-color: rgb(255, 255, 255);
+	position: relative;
+	left: 360px;
+	overflow: hidden;
+	z-index: 2;
+}
+
+.car__doors {
+	position: absolute;
+	width: 300px;
+	height: 180px;
+	top: 81px;
+	left: 50%;
+	background-color: #fe0000;
+	transform: translate(-174px, 0px);
+	border-radius: 27% 30% 26% 22% / 0% 0% 55% 51%;
+	box-shadow: inset -2px -5px 0px 2px #000;
+}
+
+.car__background-l, .car__background-r {
+	width: 290px;
+	height: 165px;
+	background-color: rgb(255, 255, 255);
+	position: absolute;
+	border-top-left-radius: 140px;
+	border-top-right-radius: 140px;
+	box-shadow: 0px -14px 0px 4px rgb(255 0 0), 0px -27px 5px -3px rgb(0, 0, 0);
+}
+
+.car__background-l {
+	bottom: 0;
+	left: 145px;
+}
+
+.car__background-r {
+	right: 185px;
+	bottom: 0;
+}
+
+.car__background-l::before {
+	content: '';
+	position: absolute;
+	width: 43px;
+	height: 16px;
+	bottom: 45px;
+	left: -63px;
+	border-radius: 30px;
+	background-color: #ffd004;
+}
+
+.car__background-r::after {
+	content: '';
+	position: absolute;
+	width: 43px;
+	height: 16px;
+	bottom: 46px;
+	right: -95px;
+	border-radius: 30px;
+	background-color: #ffd004;
+}
+
+.car__wheel {
+	width: 273px;
+	height: 273px;
+	background-color: #000;
+	position: absolute;
+	border-radius: 100%;
+	padding: 48px;
+
+}
+
+.car__wheel_style-l {
+	top: 136px;
+	left: 154px;
+	box-shadow: inset 0px 0px 0px 0px #333;
+}
+
+.car__wheel_style-r {
+	top: 136px;
+	right: 193px;
+}
+
+.wheel-car__one {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #f2f3f2;
+	padding: 10px;
+}
+
+.wheel-car__two {
+	width: 100%;
+	height: 100%;
+	background-color: rgb(53, 53, 53);
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+}
+
+.wheel-car__three {
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #f6f6f6;
+	border-radius: 50%;
+	z-index: 50;
+	/* box-shadow: inset 0px 0px 0px #000; */
+}
+
+.wheel-car__spoke {
+	width: 50%;
+	height: 8px;
+	background: #f6f6f6;
+	border-top: 3px solid #000;
+	border-bottom: 3px solid #000;
+	position: relative;
+}
+
+.wheel-car__spoke_01 {
+	transform: translate(24px, 32px) rotate(48deg);
+	z-index: 10;
+}
+
+.wheel-car__spoke_02 {
+	transform: translate(34px, 14px) rotate(64deg);
+	z-index: 3;
+}
+
+.wheel-car__spoke_03 {
+	transform: translate(34px, 0px) rotate(100deg);
+	z-index: 8;
+}
+
+.wheel-car__spoke_04 {
+	transform: translate(48px, -5px) rotate(116deg);
+	z-index: 1;
+}
+
+.wheel-car__spoke_05 {
+	transform: translate(59px, -2px) rotate(93deg);
+	z-index: 6;
+}
+
+.wheel-car__spoke_06 {
+	transform: translate(66px, -1px) rotate(326deg);
+	z-index: 4;
+}
+
+.wheel-car__spoke_07 {
+	transform: translate(12px, -6px) rotate(71deg);
+	z-index: 1;
+}
+
+.wheel-car__spoke_08 {
+	transform: translate(71px, -27px) rotate(108deg);
+	z-index: 5;
+}
+
+.wheel-car__spoke_09 {
+	transform: translate(71px, -19px) rotate(346deg);
+	z-index: 3;
+}
+
+.wheel-car__spoke_10 {
+	transform: translate(80px, -7px) rotate(12deg);
+	z-index: 7;
+}
+
+.wheel-car__spoke_11 {
+	transform: translate(83px, -21px) rotate(319deg);
+	z-index: 8;
+}
+
+.wheel-car__spoke_12 {
+	transform: translate(94px, -25px) rotate(332deg);
+	z-index: 3;
+}
+
+.wheel-car__spoke_13 {
+	transform: translate(82px, -19px) rotate(23deg);
+	z-index: 2;
+}
+
+.wheel-car__spoke_14 {
+	transform: translate(79px, -11px) rotate(3deg);
+	z-index: 6;
+}
+
+.wheel-car__spoke_15 {
+	transform: translate(77px, -15px) rotate(414deg);
+	z-index: 8;
+}
+
+.wheel-car__spoke_16 {
+	transform: translate(68px, -15px) rotate(71deg);
+	z-index: 2;
+}
+
+.wheel-car__spoke_17 {
+	transform: translate(72px, -29px) rotate(21deg);
+	z-index: 3;
+}
+
+.wheel-car__spoke_18 {
+	transform: translate(58px, -18px) rotate(48deg);
+	z-index: 7;
+}
+
+.wheel-car__spoke_19 {
+	transform: translate(47px, -29px) rotate(102deg);
+	z-index: 6;
+}
+
+.wheel-car__spoke_20 {
+	transform: translate(46px, -33px) rotate(62deg);
+	z-index: 5;
+}
+
+.wheel-car__spoke_21 {
+	transform: translate(36px, -43px) rotate(295deg);
+	z-index: 2;
+}
+
+.wheel-car__spoke_22 {
+	transform: translate(6px, -125px) rotate(20deg);
+	z-index: 2;
+}
+
+.wheel-car__spoke_23 {
+	transform: translate(5px, -128px) rotate(56deg);
+	z-index: 3;
+}
+
+.wheel-car__spoke_24 {
+	transform: translate(0px, -129px) rotate(3deg);
+	z-index: 4;
+}
+
+.wheel-car__spoke_25 {
+	transform: translate(0px, -120px) rotate(26deg);
+	z-index: 1;
+}
+
+.wheel-car__spoke_26 {
+	transform: translate(-5px, -123px) rotate(-27deg);
+	z-index: 2;
+}
+
+.wheel-car__spoke_27 {
+	transform: translate(-2px, -127px) rotate(11deg);
+	z-index: 3;
+}
+
+.wheel-car__spoke_28 {
+	transform: translate(0px, -127px) rotate(-41deg);
+	z-index: 4;
+}
+
+.wheel-car__spoke_29 {
+	transform: translate(8px, -123px) rotate(-21deg);
+	z-index: 1;
+}
+
+.wheel-car__spoke_30 {
+	transform: translate(11px, -124px) rotate(287deg);
+	z-index: 2;
+}
+
+.wheel-car__spoke_31 {
+	transform: translate(13px, -129px) rotate(-35deg);
+	z-index: 3;
+}
+
+.wheel-car__spoke_32 {
+	transform: translate(22px, -134px) rotate(-87deg);
+	z-index: 4;
+}
+
+
+/* --------------------------------- */
+
+.car_style {
+	position: relative;
+	transform: translate(center center);
+}
+
+.car_style::after {
+	content: '';
+	position: absolute;
+	right: -32px;
+	bottom: 33px;
+	width: 113px;
+	height: 82px;
+	background-color: #fff;
+	border: 3px solid #000;
+	border-radius: 100% 49% 28% 100% / 100% 100% 90% 89%;
+}
+
+.car_style::before {
+	content: '';
+	position: absolute;
+	left: -32px;
+	bottom: 33px;
+	width: 113px;
+	height: 82px;
+	background-color: #fff;
+	border: 3px solid #000;
+	border-radius: 100% 49% 28% 100% / 100% 100% 90% 89%;
+	transform: rotate(180deg);
+}
+
+.car__headlight {
+	position: absolute;
+	right: -13px;
+	top: 68px;
+	width: 150px;
+	height: 90px;
+	background-color: #c8fefe;
+	border-radius: 120px / 70px;
+	border: 3px solid rgb(76, 76, 76);
+	transform: rotate3d(3.5, 0, 4.0, 67deg);
+	box-shadow: inset -6px -8px 5px 3px rgb(121, 121, 121);
+}
+
+.car__seat {
+	height: 150px;
+	width: 50px;
+	position: absolute;
+	left: 4px;
+	top: -1px;
+	background-color: #000;
+	border-top-right-radius: 30px;
+	transform: rotate(335deg);
+	z-index: 1;
+}
+
+.car__helm {
+	position: absolute;
+	right: 24px;
+	top: -2px;
+	width: 14px;
+	height: 100px;
+	background-color: #000;
+	border-radius: 20px;
+	transform: rotate(22deg);
+}
+
+.car__ger {
+	position: absolute;
+	right: -7px;
+	top: 29px;
+	width: 48px;
+	height: 21px;
+	background-color: #000;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	transform: rotate(20deg);
+}
+
+.car__wind {
+	display: inline-block;
+	top: -128px;
+	right: 413px;
+	position: absolute;
+	width: 30px;
+	height: 150px;
+	background-color: #c8fefe;
+	border-radius: 0% 76% 52% 0% / 24% 100% 0% 54%;
+	border: 2px solid #000;
+	transform: rotate(331deg);
+	border-right: none;
+}
+
+/* --------------------------------- */
+/* --------------------------------- */
+/* --------------------------------- */
+/* --------------------------------- */
+
+
+
+/* --------------------------------- */
+.footer_bg {
+	background-color: #333;
+	font-size: 18px;
+	padding: 30px;
+}
+
+.footer__content {
+	color: #fff;
+	text-align: center;
+}
+
+.footer__autor {}
+
+.footer__link {
+	color: red;
+}
